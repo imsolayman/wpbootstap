@@ -9,6 +9,9 @@
         register_nav_menus(array(
             'primary' => __('Primary Menu')
         ));
+
+        //post format
+        add_theme_support('post-formats', array('aside', 'gallery'));
     }
 
     add_action('after_setup_theme', 'wpb_theme_setup');
